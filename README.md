@@ -32,7 +32,7 @@ Config.AmuletRNG = {
 	ChanceLoss = 20
 }
 ```
-...mean that, when the amulet is being "worn", every 120 seconds (`WaitInSeconds`) an amulet "tick" will happen. When each amulet "tick" happens, there will be a 5% chance that the wearer will receive money. If they're lucky enough to get money, the amount will be random between $1 and $500 (`RegularUpperBound`). However, there is a 7% chance (`ChanceLargeUpperBound`) that the upper bound will actually be higher at $700 (`LargeUpperBound`).
+...mean that, when the amulet is being "worn", every 120 seconds (`WaitInSeconds`) an amulet "tick" will happen. When each amulet "tick" happens, there will be a 20% chance (`ChanceGive`) that the wearer will receive money. If they're lucky enough to get money, the amount will be random between $1 and $500 (`RegularUpperBound`). However, there is a 7% chance (`ChanceLargeUpperBound`) that the upper bound will actually be higher at $700 (`LargeUpperBound`).
 
 Additionally, the amulet won't disappear until after 120 minutes (`TimeRiskLossInMinutes`) total have passed. Once that time has passed, there will start being a 20% chance (`ChanceLoss`) per tick that the amulet will disappear. If 240 minutes (`TimeDefiniteLossInMinutes`) pass and the amulet still hasn't disappeared, then it finally will (like a hard cap).
 
